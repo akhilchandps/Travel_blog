@@ -31,8 +31,9 @@ html,body{
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
+ 
 }
+
 nav{
     background-color: #407F82;
 }
@@ -142,6 +143,7 @@ nav a {
     bottom: 20px;
     position: relative;
     bottom: 140px;
+    /* margin-top: 40px; */
     
 }
 .home h1{
@@ -163,15 +165,38 @@ nav a {
 .trip
 {
     display: flex;
+    justify-content: center;
     position: relative;
     bottom: 110px;
-
+    margin-bottom: 10px;
+    margin-top: 40px;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+   
 }
 .div{
     display: flex;
+    justify-content: center;
     position: relative;
-    bottom: 110px;
-
+    bottom: 115px;
+    padding-left: 40px;
+    padding-right: 40px;
+   
+}
+.trip:hover .col
+{
+    filter: blur(3px);
+    /* opacity: .5; */
+  
+}
+.div:hover .col
+{
+    filter: blur(3px);
+    /* opacity: .5; */
+  
 }
 .col1
 {
@@ -182,46 +207,55 @@ nav a {
     margin: 5px;
     background-size: cover;
     background-repeat:no-repeat;
-    transition: 0.5s;
+    transition: all 0.5s;
+   
 }
-.col1:hover
+.col a{
+
+    text-align: center;
+   position: relative;
+   top: 50%;
+   color: white;
+   text-shadow: 3px 3px 8px black;
+}
+.trip .col:hover
 {
- transform: scale(1.1);
+   transform: scale(0.9);
     box-shadow: 3px 3px 8px black;
+
+     filter: blur(0px); 
+
+}
+.div .col:hover
+{
+    transform: scale(0.9);
+    box-shadow: 3px 3px 8px black;
+
+     filter: blur(0px); 
 }
 
 .col2
 {
     background-color: aqua;
    background-image: url(https://images.pexels.com/photos/5807688/pexels-photo-5807688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    width: 450px;
+    width: 400px;
     height: 400px;
     margin: 5px;
     background-size: cover;
     background-repeat:no-repeat;
     transition: 0.5s;
-}
-.col2:hover
-{
- transform: scale(1.1);
-    box-shadow: 3px 3px 8px black;
 }
 
 .col3
 {
     background-color: aqua;
    background-image: url(https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-    width: 500px;
+    width: 400px;
     height: 400px;
     margin: 5px;
     background-size: cover;
     background-repeat:no-repeat;
     transition: 0.5s;
-}
-.col3:hover
-{
- transform: scale(1.1);
-    box-shadow: 3px 3px 8px black;
 }
 
 .col4
@@ -235,44 +269,30 @@ nav a {
     background-repeat:no-repeat;
     transition: 0.5s;
 }
-.col4:hover
-{
- transform: scale(1.1);
-    box-shadow: 3px 3px 8px black;
-}
 
 
 .col5
 {
     background-color: aqua;
     background-image: url(https://images.pexels.com/photos/19482075/pexels-photo-19482075/free-photo-of-man-sitting-on-a-rock-under-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=600);
-     width: 450px;
+     width: 400px;
      height: 400px;
      margin: 5px;
      background-size: cover;
      background-repeat:no-repeat;
      transition: 0.5s;
-}
-.col5:hover
-{
- transform: scale(1.1);
-    box-shadow: 3px 3px 8px black;
 }
 
 .col6
 {
     background-color: aqua;
     background-image: url(https://images.pexels.com/photos/1223649/pexels-photo-1223649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-     width: 500px;
+     width: 400px;
      height: 400px;
      margin: 5px;
      background-size: cover;
      background-repeat:no-repeat;
      transition: 0.5s;
-}
-.col6:hover{
-    transform: scale(1.1);
-    box-shadow: 3px 3px 8px black;
 }
 
 #h11
@@ -374,7 +394,9 @@ div a{
 
 .home5
 {
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/22/19/25/man-1850181_1280.jpg);
+    background-image: url(./images/man-1850181_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     height: 700px;
     color: white;
@@ -396,37 +418,50 @@ div a{
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 30px;
+    text-align: center;
 }
 .home5 div{
 
     position: relative;
-    top: 300px;
+    top: 199px;
     
 }
 .home5 i
 {
    font-size: 60px;
-   position: relative;
-   left: 630px;
-   padding-bottom: 50px;
+   display: flex;
+align-items: center;
+justify-content: center;
+   /* position: relative;
+   left: 30px; */
+   padding-bottom: 60px;
    
     
 }
 .home5 button
-{
+{ 
+    margin-top: 40px;
   font-family: open sans; 
-  
+  font-size: 21px;
+  font-weight: 500;
 }
+
 .home5 a{
     color: black;
+ 
+    
+
 }
 
 /* section7 sect */
 .home6{
   width: 100%;
+  height: 500px;
   padding: 20px;
  margin-bottom: 30px;
-  background: #ddd;
+  background-image:url(./images/wood-2142241_1920.jpg);
+  background-repeat: no-repeat;
+background-position: bottom;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -436,8 +471,10 @@ div a{
   width: 280px;
   height: 400px;
   background: orange;
-margin: 0px 10px;
-transition: 1s;
+margin: 0px 20px;
+transition: 0.5s;
+margin-top: 30px;
+
 
 } 
 .box a
@@ -446,9 +483,7 @@ transition: 1s;
   text-shadow: 3px 3px 8px black;
 }
 .box:hover {
-  transform: scale(1.1);
-  /* background: #dddddd;
-  z-index: 2; */
+  transform: translate(0,-14px);
   box-shadow: 2px 2px 2px #3b3a3a;
   
 }
@@ -467,7 +502,7 @@ transition: 1s;
 }
 .box1
 {
-  background-image: url(https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_640.jpg);
+  background-image: url(./images/mountains-190055_640.jpg);
   background-position: cover;
   
 }
@@ -498,7 +533,7 @@ transition: 1s;
 
 .box2
 {
-  background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+  background-image: url(./images/tree-736885_1280.jpg);
   background-position: center;
   
 }
@@ -527,7 +562,7 @@ transition: 1s;
 
 .box3
 {
-  background-image: url(https://cdn.pixabay.com/photo/2017/07/24/11/46/castles-2534343_1280.jpg);
+  background-image: url(./images/castles-2534343_1280.jpg);
   background-position: center;
   
 }
@@ -556,7 +591,7 @@ transition: 1s;
 
 .box4
 {
-  background-image: url(https://st3.depositphotos.com/12985656/15711/i/450/depositphotos_157114924-stock-photo-top-view-of-laptop-diaries.jpg);
+  background-image: url(./images/resourse.jpg);
   background-position: cover;
   
 }
@@ -601,7 +636,7 @@ transition: 1s;
     width: 100%;
     background-color: aqua;
     height: 600px;
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/19/15/38/craftsman-1839920_1280.jpg);
+    background-image: url(./images/craftsman-1839920_1280.jpg);
     color: white;
     position: relative;
     
@@ -643,23 +678,19 @@ transition: 1s;
     background-color: aquamarine;
     width: 700px;
     height: 246px;
-    background-image:url(https://cdn.pixabay.com/photo/2016/11/14/05/21/children-1822688_640.jpg);
-    background-position: center;
+    background-image:url(./images/children-1822688_640.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     margin: 10px;
-    transition:transform .3s;
+    margin-left: 30px;
+    transition:0.6s;
+    
+    /* filter: brightness(40%); */
 }
-
-.read2 :hover{
-    transform: scaleY(1.1);
-  
-}
-.read3 :hover{
-
-    transform: scaleY(1.1);
-}
-.col52 :hover{
-    box-shadow: 3px 3px 8px black;
+.col51:hover .readz
+{
+    background-color:rgba(0,0,0,0.6);
+  height: 100%;
 }
 
 .col52
@@ -667,7 +698,7 @@ transition: 1s;
     background-color: aquamarine;
     width: 700px;
     height: 246px;
-    background-image:url(https://cdn.pixabay.com/photo/2017/10/13/16/06/face-painting-2848057_640.jpg);
+    background-image:url(./images/face-painting-2848057_640\ \(4\).jpg);
     background-position: center;
     margin: 10px;
     transition:transform .3s;
@@ -677,17 +708,18 @@ transition: 1s;
     background-color: aquamarine;
     width: 700px;
     height: 246px;
-    background-image:url(https://cdn.pixabay.com/photo/2019/04/14/17/51/seat-4127309_640.jpg);
+    background-image:url(./images/seat-4127309_640.jpg);
     background-position: cover;
     margin: 10px;
     transition:transform .3s;
+    margin-left: 30px;
 } 
 .col54
 {
     background-color: aquamarine;
     width: 700px;
     height: 246px;
-    background-image:url(https://cdn.pixabay.com/photo/2017/04/10/16/40/vacation-2218989_640.jpg);
+    background-image:url(./images/vacation-2218989_640.jpg);
     background-position: center;
     margin: 10px;
     transition:transform .3s;
@@ -699,11 +731,14 @@ color: white;
     padding-top: 160px;
   padding-left: 50px;
   text-shadow: 3px 3px 8px black;
+  transition:  0.4s;
+  
 
 }
 .raedz h5{
 
     color: #ffffff;
+ 
 
 }
 .readz1 
@@ -712,8 +747,15 @@ color: white;
     text-shadow: 3px 3px 8px black;
     padding-top: 180px;
    padding-left: 50px;
+   transition:  0.4s;
 
 }
+.col52:hover .readz1
+{
+    background-color:rgba(0,0,0,0.6);
+  height: 100%;
+}
+
 .readz1 button{
     position: relative;
     left: 310px;
@@ -728,6 +770,12 @@ color: white;
     text-shadow: 3px 3px 8px black;
     padding-top: 150px;
     padding-left: 50px;
+    transition:  0.4s;
+}
+.col53:hover .readz2
+{
+    background-color:rgba(0,0,0,0.6);
+  height: 100%;
 }
 .read3
 {
@@ -739,6 +787,12 @@ color: white;
     text-shadow: 3px 3px 8px black;
     padding-top: 150px;
     padding-left: 50px;
+    transition:  0.4s;
+}
+.col54:hover .readz3
+{
+    background-color:rgba(0,0,0,0.6);
+  height: 100%;
 }
 .readz3 button
 {
@@ -761,7 +815,8 @@ color: white;
 {
     width: 100%;
     height: 790px;
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/04/54/photographer-1867417_1280.jpg);
+    background-image: url(./images/photographer-1867417_1920.jpg);
+    background-size: cover;
 
 }
 #he
@@ -801,9 +856,13 @@ color: white;
     padding-left: 30px;
     
 }
+.overlay .col .card a{
+
+    text-shadow: none;
+}
 .overlay .card
 {
-    transition: transform .2s;
+    transition: transform .5s;
 }
 .overlay .card:hover
 {
@@ -918,6 +977,10 @@ hr{
     /* height: 800px; */
     background-image: url(https://media.istockphoto.com/id/1411923266/vector/world-map.jpg?s=612x612&w=0&k=20&c=l7nRKE2EYbR-zFjhkJ6zguNPeJYzYW9pAKHzZZUOn5I=);
     background-repeat: no-repeat;
+    background-size: contain;
+   position: relative;
+   left: 60px;
+    height: 400px;
     
     
 }
@@ -931,8 +994,29 @@ hr{
 }
 .dese
 {
-    padding-left: 800px;
+    padding-left: 600px;
 
+}
+.re
+{
+   width: 100%;
+   height: 500px;
+   background: url(./images/fam.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* .modal */
+.modal
+{
+    color:#000000
+}
+.modal h1
+{
+    text-align: center;
+    font-family: open sans;
+    font-weight: 600;
+  
+    
 }
 /* section14 */
 .videos h1
@@ -961,7 +1045,7 @@ hr{
 
 
 /* *---------------------------------------------------------------------------------------------------------------------* */
-@media screen and (max-width:400px) 
+@media only screen and (max-width: 400px)  
 {
     body{
         width: 400px;
@@ -987,7 +1071,26 @@ hr{
     left: 15x;
     top: 5px;
   }
-  
+  .nav-item 
+{
+    position: relative;
+    left: 5px;
+    padding-top: 20px;
+}
+form input
+{
+    position: relative;
+    left: 30px;
+}
+.navbar-icon
+{
+    position: relative;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
   .navbar-icon a
   {
      color: white;
@@ -1005,36 +1108,55 @@ hr{
   video{
           height:300px;
   }
+  .vid
+  {
+    height: 100%;
+  }
 #ter
 { 
-    position: relative;
-    bottom:170px;
-    color: white;
+    
+    color: rgb(0, 0, 0);
     font-family: PT Serif;
-    left: 40px;
-    padding-right: 160px;
+    left: 0px;
+    padding-right: 0x;
+    background-image: url(images/background-1747777_1920.jpg);
+    height: 600px;
+
     
 }
 #ter h1{
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 300;
+   margin-top: 80px;
+   position: relative;
+   top: 70px;
+
+    /* background-color: #407F82; */
+    /* width: 400px;
+    height: 300px; */
 }
 #ter h3
 {
-   font-size: 35px;
+   font-size: 55px;
    font-weight: 300;
+   position: relative;
+   top: 70px;
+
     
 }
 #ter a{
   font-family: PT Serif;
+
 }
 #ter a
 {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 15px;
     font-weight: 700;
     letter-spacing: 4px;
+    position: relative;
+    top: 110px;
 }
 /* 3rd section home */
 
@@ -1070,7 +1192,25 @@ hr{
 }
 
 /* section4 */
+.trip
+{
+   
+    justify-content: center;
+    position: relative;
+    bottom: 110px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    transition: 0.5s;
+    width: 100%;
+    height: 800px;
+    padding-left: 40px;
+    padding-right: 40px;
 
+}
+.div{
+    width: 100%;
+    height: 800px;
+}
 .trip
 {
     flex-direction: column;
@@ -1085,29 +1225,36 @@ hr{
 .col1
 {
     background-color: aqua;
-   background-image: url(https://images.pexels.com/photos/1080421/pexels-photo-1080421.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   background-image: url(./images/pexels-photo-1080421.jpeg);
     width: 210px;
     height: 289px;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-bottom: 40px;
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
     transition: 0.5s;
 }
+.col{
+    border-radius: 20px;
+}
 .col1:hover
 {
  transform: scale(1.1);
     box-shadow: 3px 3px 8px black;
 }
+.col h1
+{
+    font-size: 20px;
+}
 
 .col2
 {
     background-color: aqua;
-   background-image: url(https://images.pexels.com/photos/5807688/pexels-photo-5807688.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   background-image: url(./images/pexels-photo-5807688.jpeg);
     width: 210px;
     height: 289px;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-bottom: 40px;
     background-size: cover;
     background-repeat:no-repeat;
@@ -1123,10 +1270,10 @@ hr{
 .col3
 {
     background-color: aqua;
-   background-image: url(https://images.pexels.com/photos/189296/pexels-photo-189296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   background-image: url(./images/swim.jpeg);
     width: 210px;
     height: 289px;
-    margin-left: 70px;
+    margin-left: 50px;
     margin-bottom: 40px;
     background-size: cover;
     background-repeat:no-repeat;
@@ -1142,10 +1289,10 @@ hr{
 .col4
 {
     background-color: aqua;
-   background-image: url(https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+   background-image: url(./images/fooss.jpeg);
     width: 210px;
     height: 289px;
-    margin-left:  70px;
+    margin-left:  50px;
     margin-bottom: 40px;
     background-size: cover;
     background-repeat:no-repeat;
@@ -1162,11 +1309,11 @@ hr{
 .col5
 {
     background-color: aqua;
-    background-image: url(https://images.pexels.com/photos/19482075/pexels-photo-19482075/free-photo-of-man-sitting-on-a-rock-under-blue-sky.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-image: url(./images/hill.jpeg);
      width: 210px;
      height:289px;
      margin-bottom: 40px;
-     margin-left:  70px;
+     margin-left:  50px;
      background-size: cover;
      background-repeat:no-repeat;
      background-position: center;
@@ -1181,11 +1328,11 @@ hr{
 .col6
 {
     background-color: aqua;
-    background-image: url(https://images.pexels.com/photos/1223649/pexels-photo-1223649.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-image: url(./images/boar.jpeg);
      width: 210px;
      height: 289px;
      margin-bottom: 40px;
-     margin-left: 70px;
+     margin-left: 50px;
      background-size: cover;
      background-repeat:no-repeat;
      transition: 0.5s;
@@ -1292,7 +1439,7 @@ div a{
 /* section5 */
 .home5
 {
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/22/19/25/man-1850181_1280.jpg);
+    background-image: url(./images/man-1850181_1280.jpg);
     width: 400px;
     height: 900px;
     color: white;
@@ -1323,30 +1470,43 @@ div a{
     top: 100px;
     
 }
+.home5 button
+{ 
+    margin-top: 40px;
+  font-family: open sans; 
+  font-size: 15px;
+  font-weight: 500;
+}
+
 #joi i
 {
-  position: relative;
-  left: 170px;
+
   text-shadow: 3px 3px 8px black;
 }
+/* section7 */
 .home6{
-  width: 400px;
-  padding: 20px;
- margin-bottom: 30px;
-  background: #ddd;
-  flex-direction: column;
-  justify-content: center;
-}
+    width: 100%;
+    height: 900px;
+    padding: 20px;
+   margin-bottom: 30px;
+   background-image:url(./images/wood-2142241_1920.jpg);
+   background-repeat: no-repeat;
+ background-position: bottom;
+    display: flex;
 
-.box{
-  width: 200px;
-  height: 200px;
-  background: orange;
- margin: 20px;
- margin-left: 60px;
-transition: 1s;
-
-} 
+    flex-direction: column;
+    justify-content: center;
+  }
+  .box{
+    width: 220px;
+    position: relative;
+    left: 40px;
+ 
+    /* height: 500px; */
+   margin: 20px;
+  transition: 0.5s;
+  
+  } 
 .box a
 {
   color: aliceblue;
@@ -1374,8 +1534,8 @@ transition: 1s;
 }
 .box1
 {
-  background-image: url(https://cdn.pixabay.com/photo/2013/10/02/23/03/mountains-190055_640.jpg);
-  background-position: cover;
+  background-image: url(./images/mountains-190055_640.jpg);
+  background-position: center;
   
 }
 .box1
@@ -1403,7 +1563,7 @@ transition: 1s;
 
 .box2
 {
-  background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg);
+  background-image: url(./images/tree-736885_1280.jpg);
   background-position: center;
   
 }
@@ -1431,7 +1591,7 @@ transition: 1s;
 
 .box3
 {
-  background-image: url(https://cdn.pixabay.com/photo/2017/07/24/11/46/castles-2534343_1280.jpg);
+  background-image: url(./images/brasov-5781211_640.jpg);
   background-position: center;
   
 }
@@ -1459,8 +1619,8 @@ transition: 1s;
 
 .box4
 {
-  background-image: url(https://st3.depositphotos.com/12985656/15711/i/450/depositphotos_157114924-stock-photo-top-view-of-laptop-diaries.jpg);
-  background-position: cover;
+  background-image: url(./images/resourse.jpg);
+  background-position: center;
   
 }
 .box4
@@ -1479,6 +1639,7 @@ transition: 1s;
  
 
 }
+
 .box p{
   position: relative;
   top: 60px;
@@ -1493,7 +1654,7 @@ transition: 1s;
     width:400px;
     background-color: aqua;
     height: 300px;
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/19/15/38/craftsman-1839920_1280.jpg);
+    background-image: url(./images/craftsman-1839920_1280.jpg);
     background-position: center;
     color: white;
     position: relative;
@@ -1538,29 +1699,30 @@ transition: 1s;
 .read2
 {
   flex-direction: column;
+  margin-top: 30px;
  
 }
+#rd
+{
+    margin-left: 20px;
+}
+
 .col51
 {
     background-color: aquamarine;
     width:210px;
     height: 230px;
-    background-image:url(https://cdn.pixabay.com/photo/2016/11/14/05/21/children-1822688_640.jpg);
-    background-position: center;
+    background-image:url(./images/children-1822688_640.jpg);
+  background-size: cover;
     background-repeat: no-repeat;
     margin: 10px;
     transition:transform .3s;
     margin-left: 70px;
+    border-radius: 20px;
+   
 }
 
-.read2 :hover{
-    transform: scaleY(1.1);
-  
-}
-.read3 :hover{
 
-    transform: scaleY(1.1);
-}
 .col52 :hover{
     box-shadow: 3px 3px 8px black;
 }
@@ -1570,33 +1732,60 @@ transition: 1s;
     background-color: aquamarine;
     width: 210px;
     height: 230px;
-    background-image:url(https://cdn.pixabay.com/photo/2017/10/13/16/06/face-painting-2848057_640.jpg);
-    background-position: center;
+    background-image:url(./images/face-painting-2848057_640\ \(4\).jpg);
+    background-size: cover;
     margin: 10px;
     transition:transform .3s;
     margin-left: 70px;
+    border-radius: 20px;
 }
 .col53
 {
     background-color: aquamarine;
     width: 210px;
     height: 230px;
-    background-image:url(https://cdn.pixabay.com/photo/2019/04/14/17/51/seat-4127309_640.jpg);
-    background-position: cover;
+    background-image:url(./images/seat-4127309_640.jpg);
+    background-size: cover;
     margin: 10px;
     transition:transform .3s;
      margin-left: 70px;
+     border-radius: 20px;
 } 
 .col54
 {
     background-color: aquamarine;
     width: 210px;
     height: 230px;
-    background-image:url(https://cdn.pixabay.com/photo/2017/04/10/16/40/vacation-2218989_640.jpg);
-    background-position: center;
+    background-image:url(./images/vacation-2218989_640.jpg);
+    background-size: cover;
     margin: 10px;
     transition:transform .3s;
     margin-left: 70px;
+    border-radius: 20px;
+}
+.col51:hover .readz
+{
+background-color:rgba(0,0,0,0.6);
+  height: 100%;
+  border-radius: 20px;
+}
+.col52:hover .readz1
+{
+    background-color:rgba(0,0,0,0.6);
+  height: 100%;
+  border-radius: 20px;
+}
+.col53:hover .readz2
+{
+    background-color:rgba(0,0,0,0.6);
+  height: 100%;
+  border-radius: 20px;
+}
+.col54:hover .readz3
+{
+    background-color:rgba(0,0,0,0.6);
+  height: 100%;
+  border-radius: 20px;
 }
 .bunder h1
 { 
@@ -1617,11 +1806,13 @@ color: white;
   text-shadow: 3px 3px 8px black;
 
 }
-.readz button
+/* .readz button
 {
     position: relative;
-    left: 2px;
-}
+    left: 20px;
+   
+} */
+
 .raedz h5{
 
     color: #ffffff;
@@ -1642,11 +1833,39 @@ color: white;
    padding-left: 50px;
 
 }
-.readz1 button{
+.read2 button{
     position: relative;
-    left: 2px;
+    left: -3px;
+    top: 20px;
+    margin-top: 20px;
+   
+}
+.read3 button
+{
+    position: relative;
+    left: 3px;
+    top: 30px;
     margin-top: 20px;
 }
+.col54 .readz3 button
+{
+    margin-left: 30px;
+}
+.col52 .readz1 button
+{
+   margin-right: 20px;
+}
+.col51 .readz button
+{
+   margin-left: 20px;
+}
+.col53 .readz2 button
+{
+    margin-left: 15px;
+}
+
+
+
 .readz1 h2{
     padding-right: 10px;
     font-size: 20px;
@@ -1680,22 +1899,17 @@ color: white;
     padding-left: 10px;
     
 }
-.readz  button
+.read2 button h5{
+    font-size: 15px;
+}
+.read3 button h5{
+    font-size: 15px;
+}
+/* .readz  button
 {
     margin-top: 20px;
-}
-.readz3 button
-{
-    position: relative;
-    left: 30px;
-    margin-top: 20px;
-}
-.readz2 button
-{
-    position: relative;
-    left: 3px;
-    margin-top: 20px;
-}
+} */
+
 .readz3 h2
 {
     font-size: 20px;
@@ -1826,12 +2040,16 @@ color: white;
    
    .des
    {
-       width: 440px;
-       height: 200px;
+       width: 100%;
        /* height: 800px; */
        background-image: url(https://media.istockphoto.com/id/1411923266/vector/world-map.jpg?s=612x612&w=0&k=20&c=l7nRKE2EYbR-zFjhkJ6zguNPeJYzYW9pAKHzZZUOn5I=);
        background-repeat: no-repeat;
+       background-size: cover;
        color: white;
+       position: relative;
+   left: 0px;
+    height: 350px;
+    
        
        
    }
@@ -1839,14 +2057,14 @@ color: white;
    .dese h1
    {
       
-       font-size: 20px;
+       font-size: 25px;
        color: #fefeff;
        font-family: Passion One;
    }
    .dese
    {
        padding-left: 60px;
-       padding-top: 11px;
+       padding-top: 50px;
        padding-right: 60px;
    }
    .dese button
@@ -1957,7 +2175,7 @@ hr{
 .vid{
     position: relative;
     background-color: #407F82;
-    height:600px;
+    height:400px;
 }
 #h11
 {
@@ -1969,60 +2187,13 @@ hr{
     text-shadow: 3px 3px 8px black;
     
 }
-/* #ter
-{ 
-    position: relative;
-    bottom:360px;
-    color: white;
-    font-family: PT Serif;
-    left: 2px;
-    padding-top: 60px;
-    
-}
-#ter a
-{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 4px;
-}
-#ter h1{
-    font-size: 50px;
-    font-weight: 300;
-   overflow: hidden;
-   padding-top: 160px;
-}
-#ter h3
-{
-   font-size: 30.1337px;
-   font-weight: 300;
 
-    
-} */
 .home
 {
    position: relative;
    bottom: 260px;
 }
 
-
-
-/* form #in
-{
-    width: 60px;
-} */
-
-/* nav{
-        background-color: #407F82;
-        width:400px;
-        height: 100px;
-        font-family:Gt,sans-serif;
-        font-size: 13px;
-        letter-spacing: 1.6px;
-        font-weight: 300;
-        
-    } */
 
     .nav-item
     {
@@ -2039,7 +2210,7 @@ hr{
 {
     width: 100%;
     height: 400px;
-    background-image: url(https://cdn.pixabay.com/photo/2016/11/29/04/54/photographer-1867417_1280.jpg);
+    background-image: url(./images/photographer-1867417_1920.jpg);
     background-position: center;
 
 }
@@ -2089,16 +2260,7 @@ nav a {
   }
   
   .nav-item a::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 120px;
-    height: 2px;
-    bottom: 0;
-    left: 113px;
-    background-color: #ffffff;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+    display: none;
   }
   
  .nav-item  a:hover::before {
@@ -2119,4 +2281,25 @@ nav a {
     transform: scale(1.3);
 }
 /* Hover */
+}
+
+
+.modal
+{
+    color:#000000
+}
+.modal h1,p,label
+{
+    /* text-align: center; */
+    font-size: 18px;
+    /* font-family: open sans; */
+    
+}
+.overlay
+{
+   margin-left: 30px;
+}
+.bean h3,h2
+{
+    margin-left: 20px;
 }
